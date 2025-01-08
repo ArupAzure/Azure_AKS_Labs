@@ -23,7 +23,7 @@ terraform {
     hostname = "app.terraform.io"
     organization = "ACICD"
     workspaces {
-      name = "AzureaksLab"
+      name = "test"
     }
    
  }
