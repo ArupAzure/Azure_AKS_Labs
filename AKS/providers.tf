@@ -19,6 +19,15 @@ terraform {
       version = "0.9.1"
     }
   }
+ backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "ACICD"
+    workspaces {
+      name = "AzureaksLab"
+    }
+   
+ }
+
 }
 
 provider "azurerm" {
